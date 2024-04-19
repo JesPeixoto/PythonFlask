@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    frutas = ["Morango", "Uva", "Mamão", "Laranja"]
+    frutas = ["Morango", "Uva", "Mamão", "Laranja", "Melão", "Abacaxi"]
     return render_template("index.html", frutas=frutas)
 
 @app.route("/sobre")

@@ -10,8 +10,9 @@
     <h2>Integração do HTML com o Flask</h2>
     <hr>
  <ol>
-    
-    {% %}
+    {% for fruta in frutas %} <!-- Laço de repatição dentro do LI -->
+        <li>{{fruta}}</li>
+    {% endfor %}
  </ol>
 </body>
 </html>
