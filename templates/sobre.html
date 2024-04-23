@@ -8,5 +8,12 @@
 <body>
     <h2>Sobre mim</h2>
     <hr>
+    {% for chave, valor in notas.items() %}  <!-- Loop através de todas as chaves e valores do dicionário 'notas' -->
+    <details>
+        <summary>{{chave}}</summary>  <!-- Exibe a chave como o resumo do detalhe -->
+        <p>{{valor}}</p>  <!-- Exibe o valor dentro do detalhe -->
+    </details>
+{% endfor %}
+
 </body>
 </html>
