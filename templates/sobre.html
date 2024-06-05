@@ -1,3 +1,6 @@
+{% extends 'base.html'%}
+{% block conteudo %}
+
 <h2 style="text-align: center;">Diário do Professor</h2>
 <hr>
 {% for registros in registros %} <!-- Loop através de todas as chaves e valores do dicionário 'notas' -->
@@ -13,3 +16,5 @@
     <input type="text" name="nota" required>
     <button>Adicionar</button>
 </form>
+
+{% endblock conteudo %}
